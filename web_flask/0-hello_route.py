@@ -1,11 +1,13 @@
 #!/usr/bin/python3
+"""RUN AN APP with flask"""
 from flask import Flask
 
 app = Flask(__name__)
 
 
 @app.route('/', strict_slashes=False)
-def home():
+def hello_hbnb():
+    """ Function that return Hello HBNB """
     return "Hello HBNB!"
 
 
