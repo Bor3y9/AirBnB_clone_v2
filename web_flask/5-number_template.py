@@ -37,6 +37,7 @@ def show_number(n):
     """Function that takes n only intger"""
     return f"{n} is a number"
 
+
 @app.route('/number_template/<int:n>', strict_slashes=False)
 def show_number(n):
     """Function that takes n only intger"""
