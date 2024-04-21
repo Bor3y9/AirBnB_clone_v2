@@ -39,7 +39,7 @@ def show_number(n):
 
 
 @app.route('/number_template/<int:n>', strict_slashes=False)
-def show_number(n):
+def template(n):
     """Function that takes n only intger"""
     return render_template('5-number', n=n)
 
