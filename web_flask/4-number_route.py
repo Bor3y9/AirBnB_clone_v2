@@ -35,6 +35,7 @@ def hello_py(text="is cool"):
 @app.route('/number/<int:n>', strict_slashes=False)
 def show_number(n):
     """Function that takes n only intger"""
+    n = str(n)
     return f"{n} is number"
 
 
