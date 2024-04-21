@@ -36,7 +36,7 @@ def hello_py(text="is cool"):
 def show_number(n):
     """Function that takes n only intger"""
     return f"{n} is number"
-    
+
 
 if __name__ == "__main__":
     app.run(debug=True, port=5000)
