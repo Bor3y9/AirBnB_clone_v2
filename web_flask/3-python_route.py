@@ -24,5 +24,12 @@ def hello_c(text):
     return f"C {message}"
 
 
+@app.route('/python', strict_slashes=False)
+@app.route('/python/<text>', strict_slashes=False)
+def hello_py(text="is cool"):
+    """Function that returns about python"""
+    message = text.replace('_', ' ')
+    return f"Python {message}"
+
 if __name__ == "__main__":
     app.run(debug=True, port=5000)
